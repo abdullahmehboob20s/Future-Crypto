@@ -169,6 +169,26 @@
     }
   }
 
+  .roadmap {
+    .box {
+      background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
+      border-radius: rem(70);
+      padding: rem(140) rem(128);
+    }
+
+    .roadmap-road {
+      display: grid;
+      grid-template-columns: repeat(2, 22vw);
+      justify-content: space-between;
+
+      .left-roadmap,
+      .right-roadmap {
+        display: grid;
+        gap: 3vw;
+      }
+    }
+  }
+
   .portfolio {
     main {
       position: relative;
@@ -200,6 +220,34 @@
         & > :not(:last-child) {
           margin-bottom: rem(40);
         }
+      }
+    }
+  }
+
+  .popular {
+    .popular-table-banner {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      max-width: rem(1300);
+    }
+
+    .see-more {
+      width: 100%;
+      max-width: rem(300);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: rem(20);
+      padding-bottom: rem(20);
+
+      img {
+        width: rem(30);
+      }
+
+      & > :not(:last-child) {
+        margin-right: rem(20);
       }
     }
   }

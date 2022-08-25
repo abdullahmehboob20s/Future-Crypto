@@ -1185,6 +1185,21 @@ input {
   width: 100%;
   max-width: 68.75rem;
 }
+.page-index .roadmap .box {
+  background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
+  border-radius: 4.375rem;
+  padding: 8.75rem 8rem;
+}
+.page-index .roadmap .roadmap-road {
+  display: grid;
+  grid-template-columns: repeat(2, 22vw);
+  justify-content: space-between;
+}
+.page-index .roadmap .roadmap-road .left-roadmap,
+.page-index .roadmap .roadmap-road .right-roadmap {
+  display: grid;
+  gap: 3vw;
+}
 .page-index .portfolio main {
   position: relative;
   padding-top: 6.25rem;
@@ -1210,6 +1225,28 @@ input {
 }
 .page-index .portfolio main .cards > :not(:last-child) {
   margin-bottom: 2.5rem;
+}
+.page-index .popular .popular-table-banner {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 81.25rem;
+}
+.page-index .popular .see-more {
+  width: 100%;
+  max-width: 18.75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.page-index .popular .see-more img {
+  width: 1.875rem;
+}
+.page-index .popular .see-more > :not(:last-child) {
+  margin-right: 1.25rem;
 }
 .page-index .trade-and-earn main {
   display: flex;
