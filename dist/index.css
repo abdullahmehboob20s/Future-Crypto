@@ -1185,20 +1185,102 @@ input {
   width: 100%;
   max-width: 68.75rem;
 }
+.page-index .roadmap .cont-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 .page-index .roadmap .box {
   background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
   border-radius: 4.375rem;
-  padding: 8.75rem 8rem;
+  padding: 8.75rem 6vw;
 }
 .page-index .roadmap .roadmap-road {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 22vw);
+  grid-template-columns: 22vw 22vw;
   justify-content: space-between;
+  height: 55.5555555556vw;
+}
+.page-index .roadmap .roadmap-road::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.1875rem;
+  height: 86%;
+  background: linear-gradient(#4161fc, #46c5e3);
+}
+.page-index .roadmap .roadmap-road .left-roadmap > :not(:last-child),
+.page-index .roadmap .roadmap-road .right-roadmap > :not(:last-child) {
+  margin-bottom: 3vw;
+}
+.page-index .roadmap .roadmap-road .left-roadmap > :not(:last-child)::before,
+.page-index .roadmap .roadmap-road .right-roadmap > :not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
+  height: 0.125rem;
 }
 .page-index .roadmap .roadmap-road .left-roadmap,
 .page-index .roadmap .roadmap-road .right-roadmap {
-  display: grid;
-  gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-index .roadmap .roadmap-road .left-roadmap .roadmap-card,
+.page-index .roadmap .roadmap-road .right-roadmap .roadmap-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+.page-index .roadmap .roadmap-road .left-roadmap {
+  height: 92%;
+}
+.page-index .roadmap .roadmap-road .right-roadmap {
+  margin-top: 8vw;
+}
+.page-index .roadmap .roadmap-road .roadmap-card {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 2vw;
+}
+.page-index .roadmap .roadmap-road .roadmap-card-title {
+  font-size: 1vw;
+}
+.page-index .roadmap .roadmap-road .left-roadmap .roadmap-card .roadmap-date {
+  position: absolute;
+  top: 26%;
+  right: -8vw;
+  transform: translateY(-50%);
+  font-size: 0.9vw;
+}
+.page-index .roadmap .roadmap-road .left-roadmap .roadmap-card .roadmap-connector {
+  position: absolute;
+  top: 50%;
+  right: -12vw;
+  z-index: -1;
+  width: 10vw;
+  transform: translateY(-50%);
+}
+.page-index .roadmap .roadmap-road .right-roadmap .roadmap-card .roadmap-date {
+  position: absolute;
+  top: 26%;
+  left: -8vw;
+  transform: translateY(-50%);
+  font-size: 0.9vw;
+}
+.page-index .roadmap .roadmap-road .right-roadmap .roadmap-card .roadmap-connector {
+  position: absolute;
+  top: 50%;
+  left: -12vw;
+  z-index: -1;
+  width: 10vw;
+  transform: rotateY(180deg) translateY(-50%);
 }
 .page-index .portfolio main {
   position: relative;

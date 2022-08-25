@@ -170,21 +170,127 @@
   }
 
   .roadmap {
+    .cont-wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     .box {
       background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
       border-radius: rem(70);
-      padding: rem(140) rem(128);
+      padding: rem(140) 6vw;
     }
 
     .roadmap-road {
+      position: relative;
       display: grid;
-      grid-template-columns: repeat(2, 22vw);
+      grid-template-columns: 22vw 22vw;
       justify-content: space-between;
+      height: 55.55555555555556vw;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: rem(3);
+        height: 86%;
+        background: linear-gradient(#4161fc, #46c5e3);
+      }
 
       .left-roadmap,
       .right-roadmap {
-        display: grid;
-        gap: 3vw;
+        & > :not(:last-child) {
+          margin-bottom: 3vw;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(
+              90deg,
+              rgba(65, 97, 252, 0) 0%,
+              #4272f8 17.5%,
+              #45b0e8 79.48%,
+              rgba(70, 197, 227, 0) 100%
+            );
+            height: rem(2);
+          }
+        }
+      }
+
+      .left-roadmap,
+      .right-roadmap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .roadmap-card {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex: 1;
+        }
+      }
+
+      .left-roadmap {
+        height: 92%;
+      }
+
+      .right-roadmap {
+        margin-top: 8vw;
+      }
+
+      .roadmap-card {
+        position: relative;
+        z-index: 10;
+        padding-bottom: 2vw;
+
+        &-title {
+          font-size: 1vw;
+        }
+      }
+
+      .left-roadmap {
+        .roadmap-card {
+          .roadmap-date {
+            position: absolute;
+            top: 26%;
+            right: -8vw;
+            transform: translateY(-50%);
+            font-size: 0.9vw;
+          }
+          .roadmap-connector {
+            position: absolute;
+            top: 50%;
+            right: -12vw;
+            z-index: -1;
+            width: 10vw;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .right-roadmap {
+        .roadmap-card {
+          .roadmap-date {
+            position: absolute;
+            top: 26%;
+            left: -8vw;
+            transform: translateY(-50%);
+            font-size: 0.9vw;
+          }
+          .roadmap-connector {
+            position: absolute;
+            top: 50%;
+            left: -12vw;
+            z-index: -1;
+            width: 10vw;
+            transform: rotateY(180deg) translateY(-50%);
+          }
+        }
       }
     }
   }
