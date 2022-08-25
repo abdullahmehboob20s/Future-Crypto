@@ -295,6 +295,119 @@
     }
   }
 
+  .team {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: rem(200);
+      height: rem(123);
+      display: flex;
+      align-items: center;
+
+      position: absolute;
+      top: 50%;
+      bottom: unset !important;
+      transform: translateY(-50%);
+
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+      background: linear-gradient(
+        90deg,
+        #4161fc 0%,
+        rgba(70, 197, 227, 0) 97.05%
+      );
+      border-radius: rem(40);
+      justify-content: flex-start;
+      padding: 0 rem(40);
+    }
+    .swiper-button-prev {
+      left: 0;
+      background: linear-gradient(
+        240deg,
+        #4161fc 0%,
+        rgba(70, 197, 227, 0) 97.05%
+      );
+      transform: translateY(-50%);
+      border-radius: rem(40);
+      justify-content: flex-end;
+      padding: 0 rem(40);
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      top: 120%;
+      bottom: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > :not(:last-child) {
+        margin-right: rem(24);
+      }
+
+      .swiper-pagination-bullet {
+        width: rem(103);
+        height: rem(6);
+        border-radius: 0;
+        background: #c9c9c9;
+        transition: all 0.4s ease;
+        border-radius: rem(40);
+
+        &-active {
+          background: linear-gradient(180deg, #4161fc 0%, #46c5e3 100%);
+        }
+      }
+    }
+
+    .team-cards {
+      display: flex;
+
+      & > :not(:last-child) {
+        margin-right: rem(86);
+      }
+
+      .team-card {
+        flex: 1;
+
+        .img-box {
+          position: relative;
+          margin-bottom: rem(64);
+          display: flex;
+
+          .team-card-shadow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 110%;
+            height: 144%;
+            transform: translate(-50%, -50%);
+            z-index: -10;
+          }
+
+          .img-box-inner {
+            background: linear-gradient(#4161fc, #46c5e3);
+            display: flex;
+            padding: rem(6);
+            z-index: 1;
+            border-radius: rem(40);
+            width: 100%;
+            z-index: 1;
+
+            img {
+              width: 100%;
+              border-radius: rem(40);
+            }
+          }
+        }
+      }
+    }
+  }
+
   .portfolio {
     main {
       position: relative;
