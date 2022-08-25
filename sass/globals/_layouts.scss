@@ -4,6 +4,10 @@
   max-width: 1600px;
   width: 90%;
   margin: 0 auto;
+
+  @include u.breakpoint(twoxLarge) {
+    width: 80%;
+  }
 }
 .container-2 {
   max-width: 1200px;

@@ -7,6 +7,8 @@ $breakpoints-down: (
   "large": f.em(1024),
   "xLarge": f.em(1280),
   "twoxLarge": f.em(1700),
+  "threexLarge": f.em(1900),
+  "fourxLarge": f.em(2100),
 );
 
 @mixin breakpoint($size) {

@@ -1,3 +1,4 @@
+@use "../utils/breakpoints" as *;
 @use "../utils/functions" as *;
 @use "../globals/colors" as *;
 
@@ -55,7 +56,15 @@
     }
 
     .left {
-      max-width: rem(604);
+      // max-width: rem(604);
+
+      .hero-title {
+        max-width: 10em;
+      }
+
+      .hero-subtitle {
+        max-width: 26em;
+      }
 
       & > .upper {
         margin-bottom: rem(142);
@@ -85,7 +94,7 @@
       justify-content: flex-end;
 
       img {
-        width: 70%;
+        width: 32vw;
       }
     }
   }
@@ -298,15 +307,21 @@
   .team {
     .swiper-button-next,
     .swiper-button-prev {
-      width: rem(200);
-      height: rem(123);
+      width: 8vw !important;
+      height: 6vw;
       display: flex;
       align-items: center;
+
+      img {
+        width: 30%;
+      }
 
       position: absolute;
       top: 50%;
       bottom: unset !important;
       transform: translateY(-50%);
+      border-radius: 1.6vw;
+      padding: 0 2vw;
 
       &::after {
         content: "";
@@ -321,9 +336,7 @@
         #4161fc 0%,
         rgba(70, 197, 227, 0) 97.05%
       );
-      border-radius: rem(40);
       justify-content: flex-start;
-      padding: 0 rem(40);
     }
     .swiper-button-prev {
       left: 0;
@@ -333,9 +346,7 @@
         rgba(70, 197, 227, 0) 97.05%
       );
       transform: translateY(-50%);
-      border-radius: rem(40);
       justify-content: flex-end;
-      padding: 0 rem(40);
     }
 
     .swiper-pagination {
@@ -693,6 +704,238 @@
           rgba(86, 86, 86, 0) 100%
         );
       }
+    }
+  }
+
+  @include breakpoint(twoxLarge) {
+    nav {
+      .nav-container {
+        padding: rem(22) 0;
+
+        .logo {
+          width: rem(50);
+        }
+
+        .buttons {
+          & > button,
+          a {
+            max-width: rem(160);
+            min-width: rem(160);
+          }
+
+          & > :not(:last-child) {
+            margin-right: rem(30);
+          }
+        }
+      }
+    }
+
+    .hero-section {
+      .left {
+        flex: 1;
+        & > .upper {
+          margin-bottom: rem(80);
+        }
+      }
+
+      .right {
+        flex: 1;
+        justify-content: center;
+
+        img {
+          width: 32vw;
+        }
+      }
+    }
+
+    .community {
+      .cards {
+        padding: rem(60) rem(70);
+        border-radius: rem(40);
+
+        &::before {
+          content: "";
+          border-radius: rem(40);
+        }
+
+        & > :not(:last-child) {
+          margin-right: rem(40);
+          padding-right: rem(40);
+
+          &::before {
+            height: rem(100);
+          }
+        }
+      }
+
+      .community-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > button,
+        a {
+          max-width: rem(240);
+          padding-top: rem(16);
+          padding-bottom: rem(16);
+        }
+
+        & > :not(:last-child) {
+          margin-right: rem(30);
+        }
+      }
+    }
+
+    .trade-and-earn {
+      main {
+        & > :not(:last-child) {
+          margin-right: rem(100);
+        }
+
+        .right {
+          .calculate-btn {
+            padding: rem(16) rem(30);
+
+            & > :not(:last-child) {
+              margin-right: rem(30);
+            }
+          }
+
+          .height-spacing {
+            height: rem(80);
+          }
+
+          .stats-card {
+            display: flex;
+
+            & > :not(:last-child) {
+              margin-right: rem(66);
+            }
+          }
+        }
+      }
+
+      footer {
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(3, rem(400));
+          justify-content: space-between;
+        }
+
+        .footer-divider {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 50%;
+            height: 1px;
+            transform: translateY(-50%);
+            background: linear-gradient(
+              90deg,
+              rgba(65, 97, 252, 0) 0%,
+              #4272f8 17.5%,
+              #45b0e8 79.48%,
+              rgba(70, 197, 227, 0) 100%
+            );
+            z-index: -10;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 50%;
+            height: 1px;
+            transform: translateY(-50%);
+            background: linear-gradient(
+              90deg,
+              rgba(65, 97, 252, 0) 0%,
+              #4272f8 17.5%,
+              #45b0e8 79.48%,
+              rgba(70, 197, 227, 0) 100%
+            );
+            z-index: -10;
+          }
+
+          .get-started-btn {
+            display: flex;
+            align-items: center;
+            padding: rem(22) rem(60);
+            background: linear-gradient(180deg, #4161fc 0%, #0756ff 100%);
+            box-shadow: 0px 8px 59px rgba(0, 0, 0, 0.5);
+            border-radius: rem(15);
+            & > :not(:last-child) {
+              margin-right: rem(40);
+            }
+          }
+        }
+      }
+    }
+
+    .popular {
+      .popular-table-banner {
+        max-width: rem(800);
+      }
+
+      .see-more {
+        max-width: fit-content;
+        width: fit-content;
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+      }
+    }
+
+    .footer {
+      .container {
+        padding-top: rem(70);
+      }
+
+      .footer-upper {
+        grid-template-columns: rem(240) 1fr;
+        gap: rem(80);
+        margin-bottom: rem(70);
+
+        .logo-box {
+          & > img {
+            width: 80%;
+            margin-bottom: rem(30);
+          }
+
+          .footer-social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & > a {
+              img {
+                width: rem(24);
+              }
+            }
+
+            & > :not(:last-child) {
+              margin-right: rem(20);
+            }
+          }
+        }
+
+        .footer-links-box {
+          .footer-links {
+            & > a {
+              font-size: rem(14);
+            }
+          }
+        }
+      }
+    }
+
+    .btn-right-arrow {
+      width: rem(18) !important;
     }
   }
 }
