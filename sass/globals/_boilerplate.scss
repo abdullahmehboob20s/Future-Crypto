@@ -34,8 +34,6 @@ button {
 .button-primary {
   display: block;
   width: 100%;
-  min-width: rem(212);
-
   padding: rem(14) rem(32);
   border: 2px solid $blue;
   border-radius: rem(10);
@@ -44,8 +42,6 @@ button {
   padding: rem(14) rem(32);
   display: block;
   width: 100%;
-  min-width: rem(212);
-
   border: 2px solid $blue-2;
   background-color: $blue-2;
   border-radius: rem(10);
@@ -62,5 +58,5 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  // text-fill-color: transparent;
 }

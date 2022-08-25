@@ -54,7 +54,6 @@ button {
 .button-primary {
   display: block;
   width: 100%;
-  min-width: 13.25rem;
   padding: 0.875rem 2rem;
   border: 2px solid #4759fe;
   border-radius: 0.625rem;
@@ -64,7 +63,6 @@ button {
   padding: 0.875rem 2rem;
   display: block;
   width: 100%;
-  min-width: 13.25rem;
   border: 2px solid #4754ff;
   background-color: #4754ff;
   border-radius: 0.625rem;
@@ -75,7 +73,6 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 :root {
@@ -517,6 +514,18 @@ a {
 
 .mb-80px {
   margin-bottom: 5rem;
+}
+
+.mb-85px {
+  margin-bottom: 5.3125rem;
+}
+
+.mb-90px {
+  margin-bottom: 5.625rem;
+}
+
+.mb-95px {
+  margin-bottom: 5.9375rem;
 }
 
 .mb-100px {
@@ -1028,6 +1037,11 @@ input {
   display: flex;
   align-items: center;
 }
+.page-index nav .nav-container .buttons > button,
+.page-index nav .nav-container .buttons a {
+  max-width: 13.875rem;
+  min-width: 13.875rem;
+}
 .page-index nav .nav-container .buttons > :not(:last-child) {
   margin-right: 2.6875rem;
 }
@@ -1067,4 +1081,67 @@ input {
 }
 .page-index .hero-section .right img {
   width: 70%;
+}
+.page-index .community .cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 7rem;
+  position: relative;
+  border-radius: 3.75rem;
+  background: linear-gradient(90deg, #4161fc, #46c5e3, #4161fc);
+  z-index: 1;
+}
+.page-index .community .cards::before {
+  content: "";
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  right: 0.1875rem;
+  bottom: 0.1875rem;
+  background-color: #01030b;
+  border-radius: 3.75rem;
+  z-index: -1;
+}
+.page-index .community .cards > :not(:last-child) {
+  margin-right: 3rem;
+  padding-right: 3rem;
+  position: relative;
+}
+.page-index .community .cards > :not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 0.125rem;
+  height: 8.125rem;
+  background: linear-gradient(180deg, #4161fc 0%, #46c5e3 100%);
+  border-radius: 0.625rem;
+  transform: translateY(-50%);
+}
+.page-index .community .community-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-index .community .community-btns > button,
+.page-index .community .community-btns a {
+  max-width: 20.375rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+.page-index .community .community-btns > :not(:last-child) {
+  margin-right: 3.75rem;
+}
+.page-index .tokenomics main .cards {
+  display: flex;
+  justify-content: center;
+}
+.page-index .tokenomics main .cards > :not(:last-child) {
+  margin-right: 5rem;
+}
+.page-index .tokenomics main .tokenomics-chart {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 68.75rem;
 }/*# sourceMappingURL=index.css.map */
