@@ -1,0 +1,66 @@
+@use "../utils/fonts" as *;
+@use "../utils/functions" as *;
+@use "../globals/colors" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100% !important;
+  background-color: #01030b;
+  overflow-x: hidden;
+  color: white;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.font-heading {
+  font-family: $font-secondary;
+}
+
+// COMPONENTS
+
+.button-primary {
+  display: block;
+  width: 100%;
+  min-width: rem(212);
+
+  padding: rem(14) rem(32);
+  border: 2px solid $blue;
+  border-radius: rem(10);
+}
+.button-secondary {
+  padding: rem(14) rem(32);
+  display: block;
+  width: 100%;
+  min-width: rem(212);
+
+  border: 2px solid $blue-2;
+  background-color: $blue-2;
+  border-radius: rem(10);
+}
+
+.text-blue-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #4161fc 0.01%,
+    #46c5e3 47.99%,
+    #47a0f7 88.93%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

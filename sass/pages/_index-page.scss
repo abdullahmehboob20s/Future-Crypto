@@ -1,0 +1,85 @@
+@use "../utils/functions" as *;
+@use "../globals/colors" as *;
+
+.page-index {
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: rem(30) 0;
+
+      .logo {
+        width: rem(78);
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+
+        & > :not(:last-child) {
+          margin-right: rem(50);
+        }
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+
+        & > :not(:last-child) {
+          margin-right: rem(43);
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .left,
+    .right {
+      flex: 1;
+    }
+
+    .left {
+      max-width: rem(604);
+
+      & > .upper {
+        margin-bottom: rem(142);
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+
+        & > a {
+          opacity: 0.3;
+          transition: all 0.2s ease;
+        }
+        & > a:hover {
+          opacity: 1;
+        }
+
+        & > :not(:last-child) {
+          margin-right: rem(28);
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
