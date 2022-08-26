@@ -1166,6 +1166,21 @@ input {
 .page-index nav .hamburger {
   display: none;
 }
+.page-index .hero {
+  position: relative;
+}
+.page-index .hero > .ellipse {
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  z-index: -10;
+  width: 60%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .page-index .hero-section {
   min-height: 100vh;
   display: flex;
@@ -1202,9 +1217,32 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+  z-index: 1;
 }
-.page-index .hero-section .right img {
+.page-index .hero-section .right > .ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -20;
+  width: 68.75rem !important;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.page-index .hero-section .right .phone {
   width: 32vw;
+  position: relative;
+}
+.page-index .hero-section .right .phone .mobile-shadow {
+  position: absolute;
+  top: 74%;
+  left: 0;
+  z-index: -10;
+  width: 100% !important;
 }
 .page-index .community .cards {
   display: flex;
@@ -1273,6 +1311,49 @@ input {
   display: block;
   width: 100%;
   max-width: 50rem;
+  position: relative;
+}
+.page-index .tokenomics main .tokenomics-chart > .ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+  width: 250%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.page-index .roadmap {
+  position: relative;
+}
+.page-index .roadmap > .ellipse-top {
+  position: absolute;
+  top: -40%;
+  left: -30%;
+  transform: unset;
+  z-index: -10;
+  width: 80%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.page-index .roadmap > .ellipse-bottom {
+  position: absolute;
+  bottom: -50%;
+  right: -40%;
+  transform: unset;
+  z-index: -10;
+  width: 90%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .page-index .roadmap .cont-wrapper {
   width: 80%;
@@ -1488,6 +1569,19 @@ input {
   width: 70%;
   z-index: -10;
 }
+.page-index .portfolio main .portfolio-phones > .ellipse {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+  width: 200%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .page-index .portfolio main .cards > div {
   position: relative;
   width: 100%;
@@ -1539,8 +1633,30 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+}
+.page-index .trade-and-earn main .left > .ellipse {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: -20;
+  width: 300%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .page-index .trade-and-earn main .left .trade-and-earn-mobile {
+  width: 100%;
+  position: relative;
+}
+.page-index .trade-and-earn main .left .trade-and-earn-mobile .mobile-shadow {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  z-index: -10;
   width: 100%;
 }
 .page-index .trade-and-earn main .right {
@@ -1748,7 +1864,7 @@ input {
     flex: 1;
     justify-content: center;
   }
-  .page-index .hero-section .right img {
+  .page-index .hero-section .right .phone {
     width: 32vw;
   }
   .page-index .community .cards {
@@ -2544,7 +2660,15 @@ input {
     align-items: center;
     justify-content: flex-end;
   }
-  .page-index .hero-section .right img {
+  .page-index .hero-section .right > .ellipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -20;
+    min-width: 240%;
+  }
+  .page-index .hero-section .right .phone {
     max-width: 20rem;
     width: 100%;
   }
@@ -2682,6 +2806,9 @@ input {
   .page-index .footer .footer-upper .footer-links-box > div:nth-child(6) {
     grid-row: unset;
     grid-column: unset;
+  }
+  .page-index .community {
+    margin-top: 4.375rem;
   }
 }
 @media (max-width: 40em) {
