@@ -60,6 +60,8 @@
   --fs-172px: #{u.rem(172)};
   --fs-168px: #{u.rem(168)};
   --fs-144px: #{u.rem(144)};
+
+  --subtitle: #{u.rem(24)};
 }
 
 /* FONT-SIZES */
@@ -239,6 +241,10 @@
   font-size: var(--fs-144px);
 }
 
+.subtitle {
+  font-size: var(--subtitle);
+}
+
 /*  */
 
 .uppercase {
@@ -289,6 +295,8 @@ a {
     --fs-100px: #{u.rem(80)};
     --fs-74px: #{u.rem(60)};
     --fs-40px: #{u.rem(30)};
+
+    --subtitle: #{u.rem(18)};
   }
 }
 @include u.breakpoint(twoxLarge) {
@@ -311,5 +319,29 @@ a {
     .fs-30px {
       font-size: var(--fs-20px);
     }
+  }
+}
+@include u.breakpoint(xLarge) {
+  body {
+    // background-color: red;
+  }
+  :root {
+    --fs-60px: #{u.rem(36)};
+    --fs-22px: #{u.rem(14)};
+    --fs-34px: #{u.rem(18)};
+  }
+}
+
+@include u.breakpoint(large) {
+  :root {
+    --fs-60px: #{u.rem(36)};
+    --fs-22px: #{u.rem(14)};
+    --fs-34px: #{u.rem(18)};
+    --subtitle: #{u.rem(14)};
+  }
+}
+@include u.breakpoint(xsmall) {
+  :root {
+    --fs-60px: #{u.rem(28)};
   }
 }

@@ -1,0 +1,558 @@
+ <!-- TEAM -->
+    <section class="team mb-300px">
+      <div class="container">
+        <header class="mb-100px">
+          <h1 class="text-blue-gradient text-center mb-20px weight-6 fs-60px">
+            Team
+          </h1>
+
+          <p class="subtitle white text-center weight-5 lh-1_7">
+            The people behind the platform
+          </p>
+        </header>
+      </div>
+
+      <div class="relative">
+        <div class="swiper-button-next">
+          <img src="assets/images/slider-next-icon.svg" alt="" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="assets/images/slider-prev-icon.svg" alt="" />
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="container">
+          <main>
+            <div class="team-cards">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="team-card">
+                      <div class="img-box">
+                        <img
+                          src="assets/images/team-card-shadow.png"
+                          class="team-card-shadow"
+                          alt=""
+                        />
+                        <div class="img-box-inner">
+                          <img src="assets/images/team-member-1.png" alt="" />
+                        </div>
+                      </div>
+                      <h4
+                        class="fs-22px weight-8 white font-poppins mb-10px text-center"
+                      >
+                        Matthew Doe
+                      </h4>
+                      <h5 class="white text-center white weight-6 fs-20px">
+                        CEO
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-card">
+                      <div class="img-box">
+                        <img
+                          src="assets/images/team-card-shadow.png"
+                          class="team-card-shadow"
+                          alt=""
+                        />
+                        <div class="img-box-inner">
+                          <img src="assets/images/team-member-2.png" alt="" />
+                        </div>
+                      </div>
+                      <h4
+                        class="fs-22px weight-8 white font-poppins mb-10px text-center"
+                      >
+                        Nathan Paul
+                      </h4>
+                      <h5 class="white text-center white weight-6 fs-20px">
+                        CTO
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-card">
+                      <div class="img-box">
+                        <img
+                          src="assets/images/team-card-shadow.png"
+                          class="team-card-shadow"
+                          alt=""
+                        />
+                        <div class="img-box-inner">
+                          <img src="assets/images/team-member-3.png" alt="" />
+                        </div>
+                      </div>
+                      <h4
+                        class="fs-22px weight-8 white font-poppins mb-10px text-center"
+                      >
+                        Denise Levi
+                      </h4>
+                      <h5 class="white text-center white weight-6 fs-20px">
+                        Head Of Marketing
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-card">
+                      <div class="img-box">
+                        <img
+                          src="assets/images/team-card-shadow.png"
+                          class="team-card-shadow"
+                          alt=""
+                        />
+                        <div class="img-box-inner">
+                          <img src="assets/images/team-member-4.png" alt="" />
+                        </div>
+                      </div>
+                      <h4
+                        class="fs-22px weight-8 white font-poppins mb-10px text-center"
+                      >
+                        Pete Dinkins
+                      </h4>
+                      <h5 class="white text-center white weight-6 fs-20px">
+                        Lead Designer
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio mb-500px">
+      <div class="container">
+        <header class="mb-90px">
+          <h1 class="text-blue-gradient text-center mb-20px weight-6 fs-60px">
+            Create your crypto portfolio
+          </h1>
+
+          <p class="subtitle white text-center weight-5 lh-1_7">
+            We have a variety of features that make us the best place to start
+            trading
+          </p>
+        </header>
+
+        <main>
+          <div class="cards">
+            <div>
+              <img
+                src="assets/images/manage.svg"
+                class="portfolio-icon"
+                alt=""
+              />
+              <h4
+                class="w-fit-content text-blue-gradient weight-7 fs-30px mb-10px"
+              >
+                Manage Your Portfolio
+              </h4>
+              <p class="fs-18px weight-4 lh-1_6 white">
+                Buy and sell popular digital currencies, keep track of them in
+                the one place.
+              </p>
+            </div>
+            <div>
+              <img
+                src="assets/images/vault.svg"
+                class="portfolio-icon"
+                alt=""
+              />
+              <h4
+                class="w-fit-content text-blue-gradient weight-7 fs-30px mb-10px"
+              >
+                Vault Protection
+              </h4>
+              <p class="fs-18px weight-4 lh-1_6 white">
+                For added security, store your funds in a vault with time
+                delayed withdrawals.
+              </p>
+            </div>
+            <div>
+              <img
+                src="assets/images/works.svg"
+                class="portfolio-icon"
+                alt=""
+              />
+              <h4
+                class="w-fit-content text-blue-gradient weight-7 fs-30px mb-10px"
+              >
+                Works On Any Devices
+              </h4>
+              <p class="fs-18px weight-4 lh-1_6 white">
+                Stay on top of the markets with our dashboard working on all
+                devices.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="assets/images/portfolio-phones.png"
+            class="portfolio-phones"
+            alt=""
+          />
+        </main>
+      </div>
+    </section>
+
+    <!-- POPULAR -->
+    <section class="popular mb-200px">
+      <div class="container">
+        <header class="mb-50px">
+          <h1 class="text-blue-gradient text-center mb-20px weight-6 fs-60px">
+            Popular Cryptocurrencies
+          </h1>
+
+          <p class="subtitle white text-center weight-5 lh-1_7">
+            Buy and sell 350+ cryptocurrencies with your credit/debit card.
+          </p>
+        </header>
+
+        <main>
+          <img
+            src="assets/images/popular-table.png"
+            class="popular-table-banner"
+            alt=""
+          />
+
+          <button class="button-primary see-more">
+            <span class="white fs-30px weight-7">See More</span>
+            <img
+              src="assets/images/arrow-right.svg"
+              class="btn-right-arrow"
+              alt=""
+            />
+          </button>
+        </main>
+      </div>
+    </section>
+
+    <!-- TRADE AND EARN -->
+    <section class="trade-and-earn mb-200px">
+      <div class="container">
+        <main class="mb-200px">
+          <div class="left">
+            <img
+              src="assets/images/trade-and-earn-mobile.png"
+              class="trade-and-earn-mobile"
+              alt=""
+            />
+          </div>
+          <div class="right">
+            <h6
+              class="w-fit-content mb-10px text-blue-gradient fs-24px weight-6"
+            >
+              Exchange earn
+            </h6>
+
+            <h1 class="white weight-7 fs-100px lh-1 mb-50px">Trade And Earn</h1>
+
+            <p class="fs-24px weight-5 white opacity-0_6 mb-50px">
+              Choose from 40+ cryptocurrencies and stablecoins.
+            </p>
+
+            <button class="button-primary calculate-btn">
+              <span class="white fs-30px weight-7"> Calculate Rewards </span>
+              <img
+                src="assets/images/arrow-right.svg"
+                class="btn-right-arrow"
+                alt=""
+              />
+            </button>
+
+            <div class="height-spacing"></div>
+
+            <div class="stats-card">
+              <div>
+                <p class="fs-24px white opacity-0_8 mb-10px weight-5">Up To</p>
+                <h2
+                  class="w-fit-content fs-74px text-blue-gradient weight-7 mb-10px"
+                >
+                  14.5%
+                </h2>
+                <p class="fs-24px white opacity-0_8 weight-5">
+                  P.A. on cryptos
+                </p>
+              </div>
+              <div>
+                <p class="fs-24px white opacity-0_8 mb-10px weight-5">Up To</p>
+                <h2
+                  class="w-fit-content fs-74px text-blue-gradient weight-7 mb-10px"
+                >
+                  8.5%
+                </h2>
+                <p class="fs-24px white opacity-0_8 weight-5">
+                  P.A. on stablecoins
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="cards mb-150px">
+            <div>
+              <h1
+                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
+              >
+                Liquidity
+              </h1>
+              <p class="white lh-1_7 fs-24px weight-4">
+                Deep order book liquidity in all market conditions
+              </p>
+            </div>
+            <div>
+              <h1
+                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
+              >
+                Speed
+              </h1>
+              <div>
+                <li
+                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
+                >
+                  2.7m TPS matching engine
+                </li>
+                <li class="white fs-24px weight-4 list-style-type-none lh-1_6">
+                  50 micro second core latency
+                </li>
+              </div>
+            </div>
+            <div>
+              <h1
+                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
+              >
+                Security
+              </h1>
+
+              <div>
+                <li
+                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
+                >
+                  PCI:DSS 3.2.1 Level 1 compliance
+                </li>
+                <li
+                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
+                >
+                  ISO/IEC 27001:2013
+                </li>
+                <li
+                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
+                >
+                  ISO/IEC 27701:2019
+                </li>
+                <li
+                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
+                >
+                  ISO 22301:2019
+                </li>
+                <li class="white fs-24px weight-4 list-style-type-none lh-1_6">
+                  Singapore Data Protection Trust Mark
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-divider">
+            <button class="get-started-btn">
+              <span class="white fs-30px weight-7"> Get Started Now </span>
+              <img
+                src="assets/images/arrow-right.svg"
+                class="btn-right-arrow"
+                alt=""
+              />
+            </button>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-upper">
+          <div class="logo-box">
+            <img src="assets/images/logo.svg" alt="" />
+
+            <div>
+              <h2
+                class="text-center fs-40px white weight-7 opacity-0_6 mb-25px"
+              >
+                Exchange.com
+              </h2>
+
+              <div class="footer-social-links">
+                <a href="/" class="flex">
+                  <img src="assets/images/twitter.svg" alt="" />
+                </a>
+                <a href="/" class="flex">
+                  <img src="assets/images/telegram.svg" alt="" />
+                </a>
+                <a href="/" class="flex">
+                  <img src="assets/images/linkden.svg" alt="" />
+                </a>
+                <a href="/" class="flex">
+                  <img src="assets/images/github.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links-box">
+            <div>
+              <h4 class="fs-24px white weight-7 mb-20px">About Us</h4>
+
+              <div class="footer-links">
+                <a href="/" class="fs-16px white block w-fit-content">About</a>
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Careers</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Business Contacts</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Community</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Binance Blog</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content">Terms</a>
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Privacy</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Risk Warning</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Announcements</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content">News</a>
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Notices</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Cookie Preferences</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <h4 class="fs-24px white weight-7 mb-20px">Support</h4>
+
+              <div class="footer-links">
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Help center</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Contact us</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Create account</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >ID verification</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Account information</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Payment methods</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Account access</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Supported crypto</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content"
+                  >Supported countries</a
+                >
+                <a href="/" class="fs-16px white block w-fit-content">Status</a>
+              </div>
+            </div>
+            <div class="nested-links">
+              <div>
+                <h4 class="fs-24px white weight-7 mb-20px">Exchange</h4>
+
+                <div class="footer-links">
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Exchange Home</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Margin Trading</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Derivatives Trading</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >The Syndicate</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Supercharger</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Trading Arena</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <h4 class="fs-24px white weight-7 mb-20px">Individuals</h4>
+
+                <div class="footer-links">
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Buy & sell</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Wallet</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content">NFT</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="nested-links">
+              <div>
+                <h4 class="fs-24px white weight-7 mb-20px">Resources</h4>
+
+                <div class="footer-links">
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Prices</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Site Widgets</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content">Tax</a>
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Support</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <h4 class="fs-24px white weight-7 mb-20px">DeFi</h4>
+
+                <div class="footer-links">
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Wallet</a
+                  >
+                  <a href="/" class="fs-16px white block w-fit-content">Swap</a>
+                  <a href="/" class="fs-16px white block w-fit-content">Earn</a>
+                  <a href="/" class="fs-16px white block w-fit-content"
+                    >Dashboard</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-down">
+          <p class="text-center white opacity-0_6 weight-3 fs-14px">
+            © 2022 Exchange.com - All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>

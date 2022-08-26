@@ -8,6 +8,9 @@
   @include u.breakpoint(twoxLarge) {
     width: 80%;
   }
+  @include u.breakpoint(xLarge) {
+    width: 90%;
+  }
 }
 .container-2 {
   max-width: 1200px;
