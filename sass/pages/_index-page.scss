@@ -328,6 +328,46 @@
   }
 
   .team {
+    .cont {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      flex: 1;
+
+      .img-box {
+        position: relative;
+        margin-bottom: rem(64);
+        display: flex;
+
+        .team-card-shadow {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 110%;
+          height: 144%;
+          transform: translate(-50%, -50%);
+          z-index: -10;
+        }
+
+        .img-box-inner {
+          background: linear-gradient(#4161fc, #46c5e3);
+          display: flex;
+          padding: rem(6);
+          z-index: 1;
+          border-radius: rem(40);
+          width: 100%;
+          z-index: 1;
+
+          img {
+            width: 100%;
+            border-radius: rem(40);
+          }
+        }
+      }
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
       width: 8vw !important;
@@ -398,46 +438,22 @@
       }
     }
 
-    .team-cards {
-      display: flex;
-
-      & > :not(:last-child) {
-        margin-right: rem(86);
+    @media (min-width: 2000px) {
+      .cont {
+        max-width: 1600px;
       }
 
-      .team-card {
-        flex: 1;
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 14rem !important;
+        height: 10rem;
 
-        .img-box {
-          position: relative;
-          margin-bottom: rem(64);
-          display: flex;
-
-          .team-card-shadow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 110%;
-            height: 144%;
-            transform: translate(-50%, -50%);
-            z-index: -10;
-          }
-
-          .img-box-inner {
-            background: linear-gradient(#4161fc, #46c5e3);
-            display: flex;
-            padding: rem(6);
-            z-index: 1;
-            border-radius: rem(40);
-            width: 100%;
-            z-index: 1;
-
-            img {
-              width: 100%;
-              border-radius: rem(40);
-            }
-          }
+        img {
+          width: 30%;
         }
+
+        border-radius: 1.6vw;
+        padding: 0 3.6rem;
       }
     }
   }
@@ -1061,6 +1077,52 @@
         }
       }
     }
+
+    .team {
+      .mb-100px {
+        margin-bottom: rem(50);
+      }
+      .fs-20px {
+        font-size: rem(14);
+      }
+
+      .cont {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .team-card {
+        .img-box {
+          margin-bottom: rem(20);
+
+          .img-box-inner {
+            background: linear-gradient(#4161fc, #46c5e3);
+            display: flex;
+            padding: rem(5);
+            z-index: 1;
+            border-radius: rem(10);
+            width: 100%;
+            z-index: 1;
+
+            img {
+              width: 100%;
+              border-radius: rem(10);
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        & > :not(:last-child) {
+          margin-right: rem(10);
+        }
+
+        .swiper-pagination-bullet {
+          width: 4%;
+          height: rem(4);
+        }
+      }
+    }
   }
 
   @include breakpoint(large) {
@@ -1410,6 +1472,42 @@
         }
       }
     }
+
+    .team {
+      .mb-100px {
+        margin-bottom: rem(40);
+      }
+
+      .fs-20px {
+        font-size: rem(14);
+      }
+
+      .cont {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .team-card {
+        .img-box {
+          margin-bottom: rem(20);
+
+          .img-box-inner {
+            background: linear-gradient(#4161fc, #46c5e3);
+            display: flex;
+            padding: rem(5);
+            z-index: 1;
+            border-radius: rem(10);
+            width: 100%;
+            z-index: 1;
+
+            img {
+              width: 100%;
+              border-radius: rem(10);
+            }
+          }
+        }
+      }
+    }
   }
 
   @include breakpoint(small) {
@@ -1527,6 +1625,40 @@
             }
           }
         }
+      }
+    }
+  }
+
+  @include breakpoint(xsmall) {
+    .team {
+      .cont {
+        width: 62%;
+        margin: 0 auto;
+      }
+
+      .swiper-pagination {
+        top: 110%;
+
+        & > :not(:last-child) {
+          margin-right: rem(10);
+        }
+
+        .swiper-pagination-bullet {
+          width: 4%;
+          height: rem(4);
+        }
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 13vw !important;
+        height: 10vw;
+
+        img {
+          width: 36%;
+        }
+
+        padding: 0 3.2vw;
       }
     }
   }
