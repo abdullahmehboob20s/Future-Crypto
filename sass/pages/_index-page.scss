@@ -239,8 +239,9 @@
         margin: 0 auto;
         display: block;
         width: 100%;
-        max-width: rem(800);
+        max-width: rem(1200);
         position: relative;
+        margin-top: rem(120);
 
         & > .ellipse {
           position: absolute;
@@ -540,14 +541,14 @@
   .portfolio {
     main {
       position: relative;
-      padding-top: rem(100);
+      padding-top: rem(0);
 
       .portfolio-phones {
         position: absolute;
         top: 0;
         right: 0;
-        right: -6%;
-        width: 70%;
+        right: 0%;
+        width: 60%;
         z-index: -10;
 
         & > .ellipse {
@@ -919,7 +920,7 @@
     .tokenomics {
       main {
         .tokenomics-chart {
-          max-width: rem(600);
+          max-width: rem(800);
         }
       }
     }
@@ -1296,6 +1297,7 @@
       main {
         .tokenomics-chart {
           max-width: rem(500);
+          margin-top: rem(80);
         }
       }
     }
@@ -1627,6 +1629,7 @@
           display: block;
           width: 100%;
           max-width: rem(500);
+          margin-top: rem(80);
         }
       }
     }
@@ -1788,6 +1791,10 @@
     }
 
     .portfolio {
+      .mb-90px {
+        margin-bottom: rem(50);
+      }
+
       main {
         padding-top: rem(0);
         display: flex;
@@ -1796,6 +1803,9 @@
         .portfolio-phones {
           position: static;
           width: 100%;
+          max-width: rem(600);
+          margin: 0 auto;
+          margin-bottom: rem(30);
         }
 
         .cards {
