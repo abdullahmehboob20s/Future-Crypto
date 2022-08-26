@@ -1463,13 +1463,14 @@ input {
   top: 0;
   right: 0;
   right: -6%;
-  width: 72%;
+  width: 70%;
   z-index: -10;
 }
 .page-index .portfolio main .cards > div {
   position: relative;
   width: 100%;
   max-width: 22.8125rem;
+  margin-left: 3.75rem;
 }
 .page-index .portfolio main .cards > div .portfolio-icon {
   position: absolute;
