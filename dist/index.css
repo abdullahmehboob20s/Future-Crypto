@@ -38,8 +38,12 @@
 body {
   font-size: 100% !important;
   background-color: #01030b;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: white;
+}
+
+html {
+  overflow-x: hidden !important;
 }
 
 a,
