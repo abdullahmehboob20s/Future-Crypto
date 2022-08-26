@@ -17,6 +17,16 @@ if (deviceWidth.matches) {
   setHeight();
 }
 
+function setNavBgOnScroll() {
+  if (window.scrollY > 100) {
+    navbar.classList.add("scroll-active");
+  } else {
+    navbar.classList.remove("scroll-active");
+  }
+}
+
+window.addEventListener("scroll", setNavBgOnScroll);
+
 // function setter() {
 //   if (window.innerWidth < 1024) {
 //     navRight.style.height = window.innerHeight + "px";
