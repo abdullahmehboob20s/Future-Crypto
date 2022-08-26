@@ -135,3 +135,26 @@
 .mt-120px {
   margin-top: u.rem(120);
 }
+
+@include u.breakpoint(xLarge) {
+  section.mb-250px {
+    margin-bottom: u.rem(160);
+  }
+  section.mb-200px {
+    margin-bottom: u.rem(140);
+  }
+  section.mb-300px {
+    margin-bottom: u.rem(180);
+  }
+}
+@include u.breakpoint(medium) {
+  section.mb-250px {
+    margin-bottom: u.rem(120);
+  }
+  section.mb-200px {
+    margin-bottom: u.rem(80);
+  }
+  section.mb-300px {
+    margin-bottom: u.rem(120);
+  }
+}

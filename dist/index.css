@@ -703,6 +703,28 @@ a {
   margin-top: 7.5rem;
 }
 
+@media (max-width: 80em) {
+  section.mb-250px {
+    margin-bottom: 10rem;
+  }
+  section.mb-200px {
+    margin-bottom: 8.75rem;
+  }
+  section.mb-300px {
+    margin-bottom: 11.25rem;
+  }
+}
+@media (max-width: 47.5em) {
+  section.mb-250px {
+    margin-bottom: 7.5rem;
+  }
+  section.mb-200px {
+    margin-bottom: 5rem;
+  }
+  section.mb-300px {
+    margin-bottom: 7.5rem;
+  }
+}
 .opacity-1 {
   opacity: 1;
 }
@@ -1250,7 +1272,7 @@ input {
   margin: 0 auto;
   display: block;
   width: 100%;
-  max-width: 68.75rem;
+  max-width: 50rem;
 }
 .page-index .roadmap .cont-wrapper {
   width: 80%;
@@ -1259,7 +1281,7 @@ input {
 .page-index .roadmap .box {
   background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
   border-radius: 4.375rem;
-  padding: 8.75rem 6vw;
+  padding: 5rem 6vw;
 }
 .page-index .roadmap .roadmap-road {
   position: relative;
@@ -1349,40 +1371,6 @@ input {
   width: 10vw;
   transform: rotateY(180deg) translateY(-50%);
 }
-.page-index .team .cont {
-  width: 80%;
-  margin: 0 auto;
-}
-.page-index .team .team-card {
-  flex: 1;
-}
-.page-index .team .team-card .img-box {
-  position: relative;
-  margin-bottom: 4rem;
-  display: flex;
-}
-.page-index .team .team-card .img-box .team-card-shadow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 110%;
-  height: 144%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
-}
-.page-index .team .team-card .img-box .img-box-inner {
-  background: linear-gradient(#4161fc, #46c5e3);
-  display: flex;
-  padding: 0.375rem;
-  z-index: 1;
-  border-radius: 2.5rem;
-  width: 100%;
-  z-index: 1;
-}
-.page-index .team .team-card .img-box .img-box-inner img {
-  width: 100%;
-  border-radius: 2.5rem;
-}
 .page-index .team .swiper-button-next,
 .page-index .team .swiper-button-prev {
   width: 8vw !important;
@@ -1438,6 +1426,40 @@ input {
 .page-index .team .swiper-pagination .swiper-pagination-bullet-active {
   background: linear-gradient(180deg, #4161fc 0%, #46c5e3 100%);
 }
+.page-index .team .cont {
+  width: 80%;
+  margin: 0 auto;
+}
+.page-index .team .team-card {
+  flex: 1;
+}
+.page-index .team .team-card .img-box {
+  position: relative;
+  margin-bottom: 4rem;
+  display: flex;
+}
+.page-index .team .team-card .img-box .team-card-shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 144%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+.page-index .team .team-card .img-box .img-box-inner {
+  background: linear-gradient(#4161fc, #46c5e3);
+  display: flex;
+  padding: 0.375rem;
+  z-index: 1;
+  border-radius: 2.5rem;
+  width: 100%;
+  z-index: 1;
+}
+.page-index .team .team-card .img-box .img-box-inner img {
+  width: 100%;
+  border-radius: 2.5rem;
+}
 @media (min-width: 2000px) {
   .page-index .team .cont {
     max-width: 1600px;
@@ -1470,12 +1492,13 @@ input {
   position: relative;
   width: 100%;
   max-width: 22.8125rem;
-  margin-left: 3.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+.page-index .portfolio main .cards > div > :not(:last-child) {
+  margin-right: 1.25rem;
 }
 .page-index .portfolio main .cards > div .portfolio-icon {
-  position: absolute;
-  top: 0;
-  right: 105%;
   width: 2.5rem;
 }
 .page-index .portfolio main .cards > :not(:last-child) {
@@ -1506,6 +1529,7 @@ input {
 .page-index .trade-and-earn main {
   display: flex;
   align-items: center;
+  margin-bottom: 12.5rem;
 }
 .page-index .trade-and-earn main > :not(:last-child) {
   margin-right: 7.5rem;
@@ -1521,6 +1545,12 @@ input {
 }
 .page-index .trade-and-earn main .right {
   flex: 1;
+}
+.page-index .trade-and-earn main .right-head {
+  margin-bottom: 3.125rem;
+}
+.page-index .trade-and-earn main .right-head ._title {
+  margin-bottom: 3.125rem;
 }
 .page-index .trade-and-earn main .right .calculate-btn {
   width: -webkit-fit-content;
@@ -1544,16 +1574,18 @@ input {
 }
 .page-index .trade-and-earn footer .cards {
   display: grid;
-  grid-template-columns: repeat(3, 25rem);
+  grid-template-columns: 1fr 1fr 1fr !important;
   justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 9.375rem;
 }
-.page-index .trade-and-earn footer .footer-divider {
+.page-index .trade-and-earn footer .container > .footer-divider {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.page-index .trade-and-earn footer .footer-divider::before {
+.page-index .trade-and-earn footer .container > .footer-divider::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1564,7 +1596,7 @@ input {
   background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
   z-index: -10;
 }
-.page-index .trade-and-earn footer .footer-divider::after {
+.page-index .trade-and-earn footer .container > .footer-divider::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1575,7 +1607,7 @@ input {
   background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
   z-index: -10;
 }
-.page-index .trade-and-earn footer .footer-divider .get-started-btn {
+.page-index .trade-and-earn footer .container > .footer-divider .get-started-btn {
   display: flex;
   align-items: center;
   padding: 1.375rem 3.75rem;
@@ -1583,7 +1615,7 @@ input {
   box-shadow: 0px 8px 59px rgba(0, 0, 0, 0.5);
   border-radius: 0.9375rem;
 }
-.page-index .trade-and-earn footer .footer-divider .get-started-btn > :not(:last-child) {
+.page-index .trade-and-earn footer .container > .footer-divider .get-started-btn > :not(:last-child) {
   margin-right: 2.5rem;
 }
 .page-index .footer .container {
@@ -1637,8 +1669,27 @@ input {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr) auto;
+  grid-template-rows: auto auto;
   align-items: flex-start;
   gap: 2rem;
+}
+.page-index .footer .footer-upper .footer-links-box > div:first-child {
+  grid-row: 1/-1;
+}
+.page-index .footer .footer-upper .footer-links-box > div:nth-child(2) {
+  grid-row: 1/-1;
+}
+.page-index .footer .footer-upper .footer-links-box > div:nth-child(4) {
+  grid-row: 2/-1;
+  grid-column: 3/4;
+}
+.page-index .footer .footer-upper .footer-links-box > div:nth-child(5) {
+  grid-row: 1/-2;
+  grid-column: 4/-1;
+}
+.page-index .footer .footer-upper .footer-links-box > div:nth-child(6) {
+  grid-row: 2/-1;
+  grid-column: 4/5;
 }
 .page-index .footer .footer-upper .footer-links-box > div.nested-links {
   display: grid;
@@ -1683,6 +1734,9 @@ input {
   }
   .page-index nav .nav-container .nav-right .buttons > :not(:last-child) {
     margin-right: 1.875rem;
+  }
+  .page-index .tokenomics main .tokenomics-chart {
+    max-width: 37.5rem;
   }
   .page-index .hero-section .left {
     flex: 1;
@@ -1928,6 +1982,140 @@ input {
     width: 4%;
     height: 0.25rem;
   }
+  .page-index .popular header.mb-50px {
+    margin-bottom: 1.875rem;
+  }
+  .page-index .popular .popular-table-banner {
+    max-width: 33.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .page-index .tokenomics header.mb-90px {
+    margin-bottom: 3.125rem;
+  }
+  .page-index .tokenomics main .tokenomics-chart {
+    max-width: 31.25rem;
+  }
+  .page-index .trade-and-earn .fs-100px {
+    font-size: 2.5rem;
+  }
+  .page-index .trade-and-earn .fs-24px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-30px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-74px {
+    font-size: 2rem;
+  }
+  .page-index .trade-and-earn main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.25rem;
+  }
+  .page-index .trade-and-earn main > :not(:last-child) {
+    margin-right: 7.5rem;
+  }
+  .page-index .trade-and-earn main .left {
+    justify-content: center;
+  }
+  .page-index .trade-and-earn main .left .trade-and-earn-mobile {
+    width: 74%;
+  }
+  .page-index .trade-and-earn main .right {
+    flex: 1;
+  }
+  .page-index .trade-and-earn main .right-head {
+    margin-bottom: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right-head ._title {
+    margin-bottom: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right .calculate-btn {
+    padding: 0.875rem 1.875rem;
+  }
+  .page-index .trade-and-earn main .right .calculate-btn > :not(:last-child) {
+    margin-right: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right .height-spacing {
+    height: 4.375rem;
+  }
+  .page-index .trade-and-earn main .right .stats-card {
+    display: flex;
+  }
+  .page-index .trade-and-earn main .right .stats-card > :not(:last-child) {
+    margin-right: 4.125rem;
+  }
+  .page-index .trade-and-earn footer .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .page-index .trade-and-earn footer .footer-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-index .trade-and-earn footer .footer-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
+    z-index: -10;
+  }
+  .page-index .trade-and-earn footer .footer-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
+    z-index: -10;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn {
+    display: flex;
+    align-items: center;
+    padding: 1.375rem 3.75rem;
+    background: linear-gradient(180deg, #4161fc 0%, #0756ff 100%);
+    box-shadow: 0px 8px 59px rgba(0, 0, 0, 0.5);
+    border-radius: 0.9375rem;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn > :not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  .page-index .roadmap .box {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    border-radius: 1.25rem;
+  }
+  .page-index .footer .footer-upper .logo-box > img {
+    width: 70%;
+    margin-bottom: 1.875rem;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links > a img {
+    width: 1.25rem;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links > a:nth-child(3) img {
+    width: 1.125rem;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links > :not(:last-child) {
+    margin-right: 1.25rem;
+  }
+  .page-index .footer .footer-upper .footer-links-box .footer-links a {
+    font-size: 0.75rem;
+  }
 }
 @media (max-width: 64em) {
   .page-index nav .nav-container {
@@ -2060,6 +2248,7 @@ input {
     background: linear-gradient(180deg, #000a26 0%, #02050e 100%);
     border-radius: 1.25rem;
     padding: 2.5rem 0rem;
+    padding-bottom: 0;
   }
   .page-index .roadmap .roadmap-road {
     width: 90%;
@@ -2154,6 +2343,181 @@ input {
   .page-index .roadmap .roadmap-road .roadmap-card-title {
     font-size: 1rem;
   }
+  .page-index .portfolio main {
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .page-index .portfolio main .portfolio-phones {
+    position: static;
+    width: 100%;
+  }
+  .page-index .portfolio main .cards .fs-30px {
+    font-size: 1rem;
+  }
+  .page-index .portfolio main .cards .fs-18px {
+    font-size: 0.875rem;
+  }
+  .page-index .portfolio main .cards > div .portfolio-icon {
+    width: 1.375rem;
+  }
+  .page-index .popular .popular-table-banner {
+    max-width: 37.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .page-index .popular .see-more {
+    width: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 0.75rem 1.25rem;
+  }
+  .page-index .popular .see-more span {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-100px {
+    font-size: 2.5rem;
+  }
+  .page-index .trade-and-earn .fs-24px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-30px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-74px {
+    font-size: 2rem;
+  }
+  .page-index .trade-and-earn main {
+    flex-direction: column;
+    align-items: unset;
+    position: relative;
+  }
+  .page-index .trade-and-earn main > :not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 2.5rem;
+  }
+  .page-index .trade-and-earn main .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  .page-index .trade-and-earn main .left .trade-and-earn-mobile {
+    width: 100%;
+    max-width: 18.75rem;
+  }
+  .page-index .trade-and-earn main .right {
+    flex: 1;
+  }
+  .page-index .trade-and-earn main .right-head {
+    margin-bottom: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right-head ._title {
+    margin-bottom: 1rem;
+  }
+  .page-index .trade-and-earn main .right .calculate-btn {
+    padding: 0.875rem 1.875rem;
+  }
+  .page-index .trade-and-earn main .right .calculate-btn > :not(:last-child) {
+    margin-right: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right .height-spacing {
+    height: 4.375rem;
+  }
+  .page-index .trade-and-earn main .right .stats-card {
+    display: flex;
+  }
+  .page-index .trade-and-earn main .right .stats-card > :not(:last-child) {
+    margin-right: 4.125rem;
+  }
+  .page-index .trade-and-earn footer .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    justify-content: space-between;
+  }
+  .page-index .trade-and-earn footer .footer-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-index .trade-and-earn footer .footer-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
+    z-index: -10;
+  }
+  .page-index .trade-and-earn footer .footer-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, rgba(65, 97, 252, 0) 0%, #4272f8 17.5%, #45b0e8 79.48%, rgba(70, 197, 227, 0) 100%);
+    z-index: -10;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn {
+    display: flex;
+    align-items: center;
+    padding: 1.375rem 3.75rem;
+    background: linear-gradient(180deg, #4161fc 0%, #0756ff 100%);
+    box-shadow: 0px 8px 59px rgba(0, 0, 0, 0.5);
+    border-radius: 0.9375rem;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn > :not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  .page-index .footer .container {
+    padding-top: 3.75rem;
+  }
+  .page-index .footer .footer-upper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .page-index .footer .footer-upper .logo-box > img {
+    width: 80%;
+    max-width: 10rem;
+    margin-bottom: 1.875rem;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links > a img {
+    width: 1.5rem;
+  }
+  .page-index .footer .footer-upper .logo-box .footer-social-links > :not(:last-child) {
+    margin-right: 1.25rem;
+  }
+  .page-index .footer .footer-down {
+    padding: 1.875rem 0;
+    position: relative;
+  }
+  .page-index .footer .footer-down::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1875rem;
+    background: linear-gradient(90deg, rgba(86, 86, 86, 0) 0%, #707070 17.5%, #656565 79.48%, rgba(86, 86, 86, 0) 100%);
+  }
+  .page-index .team {
+    margin-bottom: 11.25rem !important;
+  }
+  .page-index .btn-right-arrow {
+    width: 0.875rem !important;
+  }
 }
 @media (max-width: 47.5em) {
   .page-index .hero-section {
@@ -2212,6 +2576,112 @@ input {
   .page-index .team .team-card .img-box .img-box-inner img {
     width: 100%;
     border-radius: 0.625rem;
+  }
+  .page-index .trade-and-earn .fs-100px {
+    font-size: 2rem;
+  }
+  .page-index .trade-and-earn .fs-24px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-30px {
+    font-size: 0.875rem;
+  }
+  .page-index .trade-and-earn .fs-74px {
+    font-size: 1.75rem;
+  }
+  .page-index .trade-and-earn main {
+    flex-direction: column;
+    align-items: unset;
+    position: relative;
+    margin-bottom: 3.75rem !important;
+  }
+  .page-index .trade-and-earn main .left {
+    position: static;
+    transform: translateY(0%);
+  }
+  .page-index .trade-and-earn main .left .trade-and-earn-mobile {
+    width: 100%;
+    max-width: 18.75rem;
+  }
+  .page-index .trade-and-earn main .right {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-index .trade-and-earn main .right-head {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
+  }
+  .page-index .trade-and-earn main .right-head ._title {
+    margin-bottom: 1rem;
+  }
+  .page-index .trade-and-earn main .right .height-spacing {
+    height: 3.75rem;
+  }
+  .page-index .trade-and-earn main .right .stats-card {
+    display: flex;
+    text-align: center;
+  }
+  .page-index .trade-and-earn main .right .stats-card > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-index .trade-and-earn main .right .stats-card > :not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  .page-index .trade-and-earn footer .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: unset !important;
+    margin-bottom: 4.375rem;
+  }
+  .page-index .trade-and-earn footer .cards > :not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .page-index .trade-and-earn footer .cards > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.375rem;
+  }
+  .page-index .trade-and-earn footer .footer-divider .get-started-btn > :not(:last-child) {
+    margin-right: 1.25rem;
+  }
+  .page-index .footer .footer-upper .footer-links-box {
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto;
+    gap: 3rem 2rem;
+  }
+  .page-index .footer .footer-upper .footer-links-box > div:first-child {
+    grid-row: unset;
+  }
+  .page-index .footer .footer-upper .footer-links-box > div:nth-child(2) {
+    grid-row: unset;
+  }
+  .page-index .footer .footer-upper .footer-links-box > div:nth-child(4) {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .page-index .footer .footer-upper .footer-links-box > div:nth-child(5) {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .page-index .footer .footer-upper .footer-links-box > div:nth-child(6) {
+    grid-row: unset;
+    grid-column: unset;
   }
 }
 @media (max-width: 40em) {
@@ -2306,6 +2776,9 @@ input {
   }
 }
 @media (max-width: 31.25em) {
+  .page-index .team {
+    margin-bottom: 7.5rem !important;
+  }
   .page-index .team .cont {
     width: 62%;
     margin: 0 auto;
@@ -2329,5 +2802,19 @@ input {
   .page-index .team .swiper-button-next img,
 .page-index .team .swiper-button-prev img {
     width: 36%;
+  }
+  .page-index .popular .popular-table-banner {
+    margin-bottom: 1.25rem;
+  }
+  .page-index .footer .footer-upper .logo-box > img {
+    width: 100% !important;
+    margin-bottom: 1.875rem;
+    max-width: 6.25rem;
+  }
+  .page-index .footer .footer-upper .footer-links-box {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 3rem 2rem;
+    justify-content: center;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,176 +1,4 @@
- <!-- POPULAR -->
-    <section class="popular mb-200px">
-      <div class="container">
-        <header class="mb-50px">
-          <h1 class="text-blue-gradient text-center mb-20px weight-6 fs-60px">
-            Popular Cryptocurrencies
-          </h1>
-
-          <p class="subtitle white text-center weight-5 lh-1_7">
-            Buy and sell 350+ cryptocurrencies with your credit/debit card.
-          </p>
-        </header>
-
-        <main>
-          <img
-            src="assets/images/popular-table.png"
-            class="popular-table-banner"
-            alt=""
-          />
-
-          <button class="button-primary see-more">
-            <span class="white fs-30px weight-7">See More</span>
-            <img
-              src="assets/images/arrow-right.svg"
-              class="btn-right-arrow"
-              alt=""
-            />
-          </button>
-        </main>
-      </div>
-    </section>
-
-    <!-- TRADE AND EARN -->
-    <section class="trade-and-earn mb-200px">
-      <div class="container">
-        <main class="mb-200px">
-          <div class="left">
-            <img
-              src="assets/images/trade-and-earn-mobile.png"
-              class="trade-and-earn-mobile"
-              alt=""
-            />
-          </div>
-          <div class="right">
-            <h6
-              class="w-fit-content mb-10px text-blue-gradient fs-24px weight-6"
-            >
-              Exchange earn
-            </h6>
-
-            <h1 class="white weight-7 fs-100px lh-1 mb-50px">Trade And Earn</h1>
-
-            <p class="fs-24px weight-5 white opacity-0_6 mb-50px">
-              Choose from 40+ cryptocurrencies and stablecoins.
-            </p>
-
-            <button class="button-primary calculate-btn">
-              <span class="white fs-30px weight-7"> Calculate Rewards </span>
-              <img
-                src="assets/images/arrow-right.svg"
-                class="btn-right-arrow"
-                alt=""
-              />
-            </button>
-
-            <div class="height-spacing"></div>
-
-            <div class="stats-card">
-              <div>
-                <p class="fs-24px white opacity-0_8 mb-10px weight-5">Up To</p>
-                <h2
-                  class="w-fit-content fs-74px text-blue-gradient weight-7 mb-10px"
-                >
-                  14.5%
-                </h2>
-                <p class="fs-24px white opacity-0_8 weight-5">
-                  P.A. on cryptos
-                </p>
-              </div>
-              <div>
-                <p class="fs-24px white opacity-0_8 mb-10px weight-5">Up To</p>
-                <h2
-                  class="w-fit-content fs-74px text-blue-gradient weight-7 mb-10px"
-                >
-                  8.5%
-                </h2>
-                <p class="fs-24px white opacity-0_8 weight-5">
-                  P.A. on stablecoins
-                </p>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <footer>
-          <div class="cards mb-150px">
-            <div>
-              <h1
-                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
-              >
-                Liquidity
-              </h1>
-              <p class="white lh-1_7 fs-24px weight-4">
-                Deep order book liquidity in all market conditions
-              </p>
-            </div>
-            <div>
-              <h1
-                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
-              >
-                Speed
-              </h1>
-              <div>
-                <li
-                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
-                >
-                  2.7m TPS matching engine
-                </li>
-                <li class="white fs-24px weight-4 list-style-type-none lh-1_6">
-                  50 micro second core latency
-                </li>
-              </div>
-            </div>
-            <div>
-              <h1
-                class="fs-74px w-fit-content text-blue-gradient weight-7 mb-25px"
-              >
-                Security
-              </h1>
-
-              <div>
-                <li
-                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
-                >
-                  PCI:DSS 3.2.1 Level 1 compliance
-                </li>
-                <li
-                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
-                >
-                  ISO/IEC 27001:2013
-                </li>
-                <li
-                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
-                >
-                  ISO/IEC 27701:2019
-                </li>
-                <li
-                  class="white mb-15px fs-24px weight-4 list-style-type-none lh-1_6"
-                >
-                  ISO 22301:2019
-                </li>
-                <li class="white fs-24px weight-4 list-style-type-none lh-1_6">
-                  Singapore Data Protection Trust Mark
-                </li>
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-divider">
-            <button class="get-started-btn">
-              <span class="white fs-30px weight-7"> Get Started Now </span>
-              <img
-                src="assets/images/arrow-right.svg"
-                class="btn-right-arrow"
-                alt=""
-              />
-            </button>
-          </div>
-        </footer>
-      </div>
-    </section>
-
-    <footer class="footer">
+  <footer class="footer">
       <div class="container">
         <div class="footer-upper">
           <div class="logo-box">
@@ -356,3 +184,150 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .footer {
+    .container {
+      position: relative;
+      padding-top: rem(120);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(4);
+        background: linear-gradient(
+          90deg,
+          rgba(65, 97, 252, 0) 0%,
+          #4272f8 17.5%,
+          #45b0e8 79.48%,
+          rgba(70, 197, 227, 0) 100%
+        );
+      }
+    }
+
+    .footer-upper {
+      display: grid;
+      grid-template-columns: rem(400) 1fr;
+      gap: rem(112);
+      margin-bottom: rem(120);
+
+      .logo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > img {
+          max-width: rem(240);
+          width: 100%;
+          margin-bottom: rem(50);
+        }
+
+        .footer-social-links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & > a {
+            opacity: 0.6;
+            transition: all 0.2s ease;
+
+            img {
+              width: rem(32);
+            }
+          }
+          & > a:hover {
+            opacity: 1;
+          }
+
+          & > :not(:last-child) {
+            margin-right: rem(28);
+          }
+        }
+      }
+
+      .footer-links-box {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) auto;
+        align-items: flex-start;
+        gap: 2rem;
+
+        & > div.nested-links {
+          display: grid;
+          gap: 2rem;
+        }
+
+        .footer-links {
+          & > a {
+            opacity: 0.6;
+            transition: all 0.2s ease;
+            font-weight: 300;
+          }
+          & > a:hover {
+            opacity: 1;
+            font-weight: bold;
+          }
+
+          & > a:not(:last-child) {
+            margin-bottom: rem(14);
+          }
+        }
+      }
+    }
+
+    .footer-down {
+      padding: rem(30) 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(3);
+        background: linear-gradient(
+          90deg,
+          rgba(86, 86, 86, 0) 0%,
+          #707070 17.5%,
+          #656565 79.48%,
+          rgba(86, 86, 86, 0) 100%
+        );
+      }
+    }
+  }
