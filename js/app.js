@@ -2,6 +2,27 @@ const hamburger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".nav-right");
 const crossBtn = document.querySelector(".cross-icon");
 const blackScreen = document.querySelector(".black-screen");
+const navRight = document.querySelector(".nav-right");
+const navbar = document.querySelector("nav");
+
+function setter() {
+  if (window.innerWidth < 1024) {
+    navRight.style.height = window.innerHeight + "px";
+    blackScreen.style.height = window.innerHeight + "px";
+  } else {
+    navRight.style.height = "auto";
+    blackScreen.style.height = "auto";
+  }
+
+  if (window.scrollY > 100) {
+    navbar.classList.add("scroll-active");
+  } else {
+    navbar.classList.remove("scroll-active");
+  }
+}
+
+document.addEventListener("scroll", setter);
+window.addEventListener("resize", setter);
 
 function toggle() {
   sidebar.classList.toggle("active");
